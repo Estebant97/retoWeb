@@ -1,0 +1,69 @@
+body{
+    font-family: Verdana, sans serif;
+    font-size: 14px;
+    color: #4F545F;
+}
+
+h2{
+    margin: 0;
+    background-color: #55B3C5;
+    color: white;
+    padding: 20px;
+}
+fieldset{
+    border: 2px dashed #DDDDDD;
+    margin: 20px;
+    padding: 20px;
+}
+legend{
+    font-weight: 900;
+}
+
+fieldset > span {
+    color: #42579C;
+    border: 1px solid #6278B0;
+    padding: 20px 40px;
+    background-color: #CCE9F8;
+    display: block;
+}
+.formElement{
+    padding: 5px 10px;
+    width: 300px;
+}
+.optionContainer{
+    margin-top: 15px;
+}
+.clickable{
+    padding: 10px;
+    margin-left: 15px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+.clickable:hover{
+    cursor: pointer;
+}
+.submit-btn{
+    background-color: #56C56F;
+}
+.submit-btn:hover{
+    background-color: rgb(147,238,168);
+}
+.reset-btn{
+    background-color: #D9534F;
+}
+.reset-btn:hover{
+    background-color: rgb(238, 147, 174);
+}
+#rate{
+    width: 250px;
+}
+p{
+    border: 1px solid black;
+    /* This is needed to align to the center a block element */
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+}

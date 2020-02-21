@@ -5,8 +5,10 @@
             Reto
         </title>
         <meta charset = "UTF-8">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
+        <h2>Welcome to our menu!</h2>
         <ul>
             <li>             
                 <a href="url">Home</a>
@@ -19,7 +21,6 @@
             </li>
         </ul>
         <p>This is the sidebar!</p>
-        <h2>Welcome to our menu!</h2>
         <table>
             <thead>
                 <tr>
@@ -108,36 +109,37 @@
                 <legend>
                     Leave us a comment
                 </legend>
-                <div>
+                <span>We won't share this information</span>
+                <div class="optionContainer">
                     <label for="first-name">
                         First name:
                     </label>
-                    <input type="text" id="first-name" class="info" name="name"/>
+                    <input type="text" id="first-name" class="formElement" name="name"/>
                 </div>
-                <div>
+                <div class="optionContainer">
                     <label for="last-name">
                         Last name:
                     </label>
-                    <input type="last-name" id="last-name" class="info" name="name"/>
+                    <input type="last-name" id="last-name" class="formElement" name="name"/>
                 </div>
-                <div>
+                <div class="optionContainer">
                     <label for="email">
                         Email:
                     </label>
-                    <input type="email" id="email" class="info" name="email"/>
+                    <input type="email" id="email" class="formElement" name="email"/>
                 </div>
-                <div>
+                <div class="optionContainer">
                     <label for="phone">
                         Phone:
                     </label>
-                    <input type="tel" id="phone" class="phone" name="phone"/>
+                    <input type="tel" id="phone" class="formElement" name="phone"/>
                 </div>
-                <div>
+                <div class="optionContainer">
                     <label for="rateus">
                         Rate Us:
                     </label>
                 </div>
-                    <select id="country" name="country">
+                    <select id="rate" name="rate">
                         <option value="VG">
                             Very Good
                         </option>
@@ -148,31 +150,32 @@
                             Bad
                         </option>
                     </select>
-                <div>
+                <div class="optionContainer">
                     <label for="comment">
                         Your comment:
                     </label>
                 </div>
-                    <textarea name="comment">
+                    <textarea name="comment"  class="formElement">
                     </textarea>
-                <div>
+                <div class="optionContainer">
                     <label for="Visit">
                         Would you visit us again?
                     </label>
                 </div>
-                <div>
+                <div class="optionContainer">
                     <label for="yes">
                         Yes:
                     </label>
                     <input type="radio" id="yes" name="option" value="yes">
                 </div>
-                <div>
+                <div class="optionContainer">
                     <label for="no">
                         No:
                     </label>
                     <input type="radio" id="no" name="option" value="no">
                 </div>
-                <input type="submit" value="Submit"/>
+                <input type="submit" value="Submit" class="optionContainer clickable submit-btn"/>
+                <button class="optionContainer clickable reset-btn" value="reset">Reset</button>
             </fieldset>
         </form>
     </body>
