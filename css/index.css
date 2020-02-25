@@ -59,11 +59,47 @@ fieldset > span {
 #rate{
     width: 250px;
 }
-p{
-    border: 1px solid black;
-    /* This is needed to align to the center a block element */
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    text-align: center;
-}
+ul{
+    background-color: #CCCCCC;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto; 
+  }
+  /*
+  cuando usas float siempre tambien usar over flow auto
+  float siempre funciona en horizontal
+  */
+  
+  li{
+    float: left;
+    padding: 20px;
+  }
+  
+  li:hover{
+    background-color: #999999;
+    color: white;
+    cursor:pointer;
+  
+  }
+  table{
+  margin: 15px auto;
+  /*para que este en medio centrado, usar el margen izquierdo*/
+  border-collapse: collapse;
+  border: 1px solid #f4f4f4;
+  }
+  
+  td, th{
+    /* la coma es como and &*/
+    color: #999999;
+    border: 1px solid #f4f4f4;
+    padding: 15px 35px;
+  }
+  th.theading{
+      background-color: #55B3C5;
+      color: white;
+  }
+  tr:hover{
+      color: #555555;
+      background-color: #f4f4f4;
+  }
